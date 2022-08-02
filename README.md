@@ -20,6 +20,9 @@
 
 <a name="install"></a>
 ## 2. Cài đặt 
+* Cài đặt gồm 2 phần:
+    * **Chương trình và Filebeat:** Chương trình được viết bằng python để sinh ra file log, trong khí đó filebeat được cài trên máy để đọc và gửi file log qua ELK stack.
+    * **ELK Stack:** monitor và phân tích log, được cài đặt bằng docker-compose.  
 
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
