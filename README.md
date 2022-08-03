@@ -5,6 +5,7 @@
 * [2. Cài đặt](#install)
     * [2.1 Cài đặt ELK Stack](#elk_stack_install)
     * [2.2 Cài đặt FileBeat](#filebeat_install)
+    * [2.3 Xem dữ liệu log từ kibana](#log_kibana)
 * [3. Xây dựng chương trình](#application)
 
 <a name="overview"></a>
@@ -140,6 +141,9 @@ Hiện tại trong chương trình đang dùng version 7.
 
 * Cài đặt trên hệ điệu hành khác:
 [tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
+
+<a name="log_kibana"></a>
+### 2.3 Xem dữ liệu log từ kibana 
 
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
