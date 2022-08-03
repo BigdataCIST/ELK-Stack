@@ -109,6 +109,15 @@ Hiện tại trong chương trình đang dùng version 7.
    ```
    docker compose up -d
    ```
+* Sau khi mọi thứ chạy xong, kiểm tra lại:
+   * Elasticsearch: [localhost:9200](http://localhost:9200/)
+   
+   ![elasticsearch](https://user-images.githubusercontent.com/103992475/182545817-1d6521be-e727-42a0-83a5-0731dd5b24e2.png)
+   
+   * Kibana: [localhost:5601](http://localhost:5601/)
+
+   ![kibana](https://user-images.githubusercontent.com/103992475/182546061-71ae7ff9-b9b6-474f-a93d-c5b4dc463eb1.png)
+   
 
 <a name="filebeat_install"></a>
 ### 2.2 Cài đặt FileBeat
