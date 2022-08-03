@@ -33,6 +33,12 @@
 
 <a name="logstash_overview"></a>
 ### 1.3. Logstash 
+* **Tổng quan về Logstash**
+  * Là công cụ nhận trực tiếp các file log được đẩy về từ Filebeat sau đó xử lý và đẩy vào Elasticsearch.
+  * Có ***3 thành phần chính*** và đó cũng là 3 bước xử lý chính của logstash, đó là:
+    * **Input:** Có thể lấy đầu vào từ nhiều nguồn khác nhau, cụ thể trong chương trình này là lấy log từ chương trình và thông qua filebeat để đẩy về logstash. 
+    * **Filter:** 
+    * **Output:** 
 
 <a name="elasticsearch_overview"></a>
 ### 1.4. Elasticsearch 
