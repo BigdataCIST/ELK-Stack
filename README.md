@@ -3,8 +3,8 @@
 ### Mục lục 
 * [1. Tổng quan về ELK Stack](#overview)
 * [2. Cài đặt](#install)
-    * [2.1 Cài đặt FileBeat](#filebeat_install)
-    * [2.2 Cài đặt ELK Stack](#elk_stack_install)
+    * [2.1 Cài đặt ELK Stack](#elk_stack_install)
+    * [2.2 Cài đặt FileBeat](#filebeat_install)
 * [3. Xây dựng chương trình](#application)
 
 <a name="overview"></a>
@@ -28,8 +28,12 @@
 
 Hiện tại trong chương trình đang dùng version 7.
 
+<a name="elk_stack_install"></a>
+### 2.1 Cài đặt ELK Stack 
+
+
 <a name="filebeat_install"></a>
-### 2.1 Cài đặt FileBeat
+### 2.2 Cài đặt FileBeat
 
 * Cài đặt trên Ubuntu 20.04:
     * Tải file:
@@ -40,14 +44,26 @@ Hiện tại trong chương trình đang dùng version 7.
     ```
     tar xzvf filebeat-7.7.1-linux-x86_64.tar.gz
     ```
-
+    * CD vào folder vừa được giải nén sau khi tải về để sửa file filebeat.yml như sau:
+    ```
+   filebeat.inputs:
+   - type: log
+      enabled: true
+      paths:
+         - /Users/locpham/workspace/go-elasticsearch/logs/go.log
+   output.logstash:
+      hosts: ["localhost:5044"]
+    ```
+    ***Chú ý:*** paths - định nghĩa đường dẫn chứa file log để push lên elasticsearch
+   * Chạy filebeat:
+   ```
+   sudo chown root filebeat.yml
+   sudo ./filebeat -e
+   ```
 
 * Cài đặt trên hệ điệu hành khác:
 
 [Tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
-
-<a name="elk_stack_install"></a>
-### 2.2 Cài đặt ELK Stack 
 
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
