@@ -158,5 +158,7 @@ Hiện tại trong chương trình đang dùng version 7.
 <a name="log_kibana"></a>
 ### 2.3 Xem dữ liệu log từ kibana 
 
+
+
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
