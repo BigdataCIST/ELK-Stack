@@ -2,22 +2,22 @@
 
 ### Mục lục 
 * [1. Tổng quan về ELK Stack](#overview)
-   * [1.1 ELK Stack là gì?](#elk_stack_overview)
-   * [1.2 Filebeat](#filebeat_overview)
-   * [1.3 Logstash](#logstash_overview)
-   * [1.4 Elasticsearch](#elasticsearch_overview)
-   * [1.5 Kibana](#kibana_overview)
+   * [1.1. ELK Stack là gì?](#elk_stack_overview)
+   * [1.2. Filebeat](#filebeat_overview)
+   * [1.3. Logstash](#logstash_overview)
+   * [1.4. Elasticsearch](#elasticsearch_overview)
+   * [1.5. Kibana](#kibana_overview)
 * [2. Cài đặt](#install)
-    * [2.1 Cài đặt ELK Stack](#elk_stack_install)
-    * [2.2 Cài đặt FileBeat](#filebeat_install)
-    * [2.3 Xem dữ liệu log từ kibana](#log_kibana)
+    * [2.1. Cài đặt ELK Stack](#elk_stack_install)
+    * [2.2. Cài đặt FileBeat](#filebeat_install)
+    * [2.3. Xem dữ liệu log từ kibana](#log_kibana)
 * [3. Xây dựng chương trình](#application)
 
 <a name="overview"></a>
 ## 1. Tổng quan về ELK Stack
 
 <a name="elk_stack_overview"></a>
-### 1.1 ELK Stack là gì?
+### 1.1. ELK Stack là gì?
 
 - **ELK Stack** là tập hợp của 3 sản phẩm mã nguồn mở là Elasticsearch, Logstash và Kibana được sử dụng cho việc quản lý log. Tuy nhiên sau này sự ra đời của Beats để shipping logs do đó ELK Stack thường được gọi luôn là Elastic Stack. 
 -  **Luồng hoạt động**:
@@ -29,16 +29,16 @@
 ![elk_stack](https://user-images.githubusercontent.com/103992475/182336538-2583ec35-aeab-4384-9186-67dabbdb1d04.png)
 
 <a name="filebeat_overview"></a>
-### 1.2 Filebeat
+### 1.2. Filebeat
 
 <a name="logstash_overview"></a>
-### 1.3 Logstash 
+### 1.3. Logstash 
 
 <a name="elasticsearch_overview"></a>
-### 1.4 Elasticsearch 
+### 1.4. Elasticsearch 
 
 <a name="kibana_overview"></a>
-### 1.5 Kibana 
+### 1.5. Kibana 
 
 <a name="install"></a>
 ## 2. Cài đặt 
@@ -49,7 +49,7 @@
 Hiện tại trong chương trình đang dùng version 7.
 
 <a name="elk_stack_install"></a>
-### 2.1 Cài đặt ELK Stack 
+### 2.1. Cài đặt ELK Stack 
 
 * Tạo file *logstash.conf* trong folder logstash/config
    ```
@@ -139,7 +139,7 @@ Hiện tại trong chương trình đang dùng version 7.
    
 
 <a name="filebeat_install"></a>
-### 2.2 Cài đặt FileBeat
+### 2.2. Cài đặt FileBeat
 
 * Cài đặt trên Ubuntu 20.04:
     * Tải file:
@@ -175,7 +175,7 @@ Hiện tại trong chương trình đang dùng version 7.
 [tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
 
 <a name="log_kibana"></a>
-### 2.3 Xem dữ liệu log từ kibana 
+### 2.3. Xem dữ liệu log từ kibana 
 
 ![kibana_logstash](https://user-images.githubusercontent.com/103992475/182553173-893b1246-bc62-4465-940b-6a82ee0ad7cc.png)
 
