@@ -104,6 +104,10 @@ Hiện tại trong chương trình đang dùng version 7.
    volumes:
      data:
    ```
+* Run docker:
+   ```
+   docker compose up -d
+   ```
 
 <a name="filebeat_install"></a>
 ### 2.2 Cài đặt FileBeat
