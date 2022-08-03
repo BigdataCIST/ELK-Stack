@@ -147,6 +147,10 @@ Hiện tại trong chương trình đang dùng version 7.
    sudo chown root filebeat.yml
    sudo ./filebeat -e
    ```
+   Sau khi chạy xong ta được kết quả như sau:
+   
+   ![filebeat_e](https://user-images.githubusercontent.com/103992475/182547209-cfef2e7d-4b1a-4f58-a157-605374c34092.png)
+
 
 * Cài đặt trên hệ điệu hành khác:
 [tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
