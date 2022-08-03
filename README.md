@@ -2,6 +2,11 @@
 
 ### Mục lục 
 * [1. Tổng quan về ELK Stack](#overview)
+   * [1.1 ELK Stack là gì?](#elk_stack_overview)
+   * [1.2 Filebeat](#filebeat_overview)
+   * [1.3 Logstash](#logstash_overview)
+   * [1.4 Elasticsearch](#elasticsearch_overview)
+   * [1.5 Kibana](#kibana_overview)
 * [2. Cài đặt](#install)
     * [2.1 Cài đặt ELK Stack](#elk_stack_install)
     * [2.2 Cài đặt FileBeat](#filebeat_install)
@@ -10,6 +15,9 @@
 
 <a name="overview"></a>
 ## 1. Tổng quan về ELK Stack
+
+<a name="elk_stack_overview"></a>
+### 1.1 ELK Stack là gì?
 
 - **ELK Stack** là tập hợp của 3 sản phẩm mã nguồn mở là Elasticsearch, Logstash và Kibana được sử dụng cho việc quản lý log. Tuy nhiên sau này sự ra đời của Beats để shipping logs do đó ELK Stack thường được gọi luôn là Elastic Stack. 
 -  **Luồng hoạt động**:
@@ -20,6 +28,17 @@
 
 ![elk_stack](https://user-images.githubusercontent.com/103992475/182336538-2583ec35-aeab-4384-9186-67dabbdb1d04.png)
 
+<a name="filebeat_overview"></a>
+### 1.2 Filebeat
+
+<a name="logstash_overview"></a>
+### 1.3 Logstash 
+
+<a name="elasticsearch_overview"></a>
+### 1.4 Elasticsearch 
+
+<a name="kibana_overview"></a>
+### 1.5 Kibana 
 
 <a name="install"></a>
 ## 2. Cài đặt 
