@@ -3,6 +3,8 @@
 ### Mục lục 
 * [1. Tổng quan về ELK Stack](#overview)
 * [2. Cài đặt](#install)
+    * [2.1 Cài đặt FileBeat](#filebeat_install)
+    * [2.2 Cài đặt ELK Stack](#elk_stack_install)
 * [3. Xây dựng chương trình](#application)
 
 <a name="overview"></a>
@@ -23,6 +25,29 @@
 * Cài đặt gồm 2 phần:
     * **Chương trình và Filebeat:** Chương trình được viết bằng python để sinh ra file log, trong khí đó filebeat được cài trên máy để đọc và gửi file log qua ELK stack.
     * **ELK Stack:** monitor và phân tích log, được cài đặt bằng docker-compose.  
+
+Hiện tại trong chương trình đang dùng version 7.
+
+<a name="filebeat_install"></a>
+### 2.1 Cài đặt FileBeat
+
+* Cài đặt trên Ubuntu 20.04:
+    * Tải file:
+    ```
+    curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.7.1-linux-x86_64.tar.gz
+    ```
+    * Giải nén:
+    ```
+    tar xzvf filebeat-7.7.1-linux-x86_64.tar.gz
+    ```
+
+
+* Cài đặt trên hệ điệu hành khác:
+
+[Tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
+
+<a name="elk_stack_install"></a>
+### 2.2 Cài đặt ELK Stack 
 
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
