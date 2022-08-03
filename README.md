@@ -39,7 +39,9 @@
     * **Input:** Có thể lấy đầu vào từ nhiều nguồn khác nhau, cụ thể trong chương trình này là lấy log từ chương trình và thông qua filebeat để đẩy về Logstash. 
     * **Filter:** Khi những log này tới Logstash Server, có một số lớn các bộ lọc cho phép chúng ta chỉnh sửa và chuyển đổi để lấy ra các thông tin cần thiết.  
     * **Output:** Logstash hỗ trợ nhiều đích tới khi xuất dữ liệu ra, cụ thể trong trương trình này là đẩy vào Elasticsearch.
- * Do đó khi cài đặt cần có file logstash.conf để định nghĩa input, filter và output.
+  * Do đó khi cài đặt cần có file logstash.conf để định nghĩa input, filter và output.
+  
+  ![logstash_conf](https://user-images.githubusercontent.com/103992475/182568658-8cf20194-b606-4aa1-8983-94662a1c69e4.png)
 * **Cách hoạt động**
 
 ![logstash_pipeline](https://user-images.githubusercontent.com/103992475/182565307-89888047-7458-4e56-8be6-081cea22f9f9.png)
