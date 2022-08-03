@@ -31,6 +31,25 @@ Hiện tại trong chương trình đang dùng version 7.
 <a name="elk_stack_install"></a>
 ### 2.1 Cài đặt ELK Stack 
 
+* Tạo file *logstash.conf* trong folder logstash/config
+   ```
+   input {
+      beats {
+        port => 5044
+            }
+        }
+   filter {
+      json {
+           source => "message"
+           }
+         }
+   output {
+      elasticsearch {
+           hosts => [ "elasticsearch" ]
+                    }
+         }
+   ```
+*  File *docker-compose.yml*
 
 <a name="filebeat_install"></a>
 ### 2.2 Cài đặt FileBeat
@@ -62,8 +81,7 @@ Hiện tại trong chương trình đang dùng version 7.
    ```
 
 * Cài đặt trên hệ điệu hành khác:
-
-[Tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
+[tài liệu tham khảo](https://www.elastic.co/guide/en/beats/filebeat/7.7/filebeat-getting-started.html)
 
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
