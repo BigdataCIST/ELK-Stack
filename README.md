@@ -177,7 +177,7 @@ Hiện tại trong chương trình đang dùng version 7.
 <a name="log_kibana"></a>
 ### 2.3 Xem dữ liệu log từ kibana 
 
-
+![kibana_logstash](https://user-images.githubusercontent.com/103992475/182553173-893b1246-bc62-4465-940b-6a82ee0ad7cc.png)
 
 <a name="application"></a>
 ## 3. Xây dựng chương trình 
