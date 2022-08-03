@@ -36,9 +36,13 @@
 * **Tổng quan về Logstash**
   * Là công cụ nhận trực tiếp các file log được đẩy về từ Filebeat sau đó xử lý và đẩy vào Elasticsearch.
   * Có ***3 thành phần chính*** và đó cũng là 3 bước xử lý chính của logstash, đó là:
-    * **Input:** Có thể lấy đầu vào từ nhiều nguồn khác nhau, cụ thể trong chương trình này là lấy log từ chương trình và thông qua filebeat để đẩy về logstash. 
-    * **Filter:** 
-    * **Output:** 
+    * **Input:** Có thể lấy đầu vào từ nhiều nguồn khác nhau, cụ thể trong chương trình này là lấy log từ chương trình và thông qua filebeat để đẩy về Logstash. 
+    * **Filter:** Khi những log này tới Logstash Server, có một số lớn các bộ lọc cho phép chúng ta chỉnh sửa và chuyển đổi để lấy ra các thông tin cần thiết.  
+    * **Output:** Logstash hỗ trợ nhiều đích tới khi xuất dữ liệu ra, cụ thể trong trương trình này là đẩy vào Elasticsearch.
+ * Do đó khi cài đặt cần có file logstash.conf để định nghĩa input, filter và output.
+* **Cách hoạt động**
+
+![logstash_pipeline](https://user-images.githubusercontent.com/103992475/182565307-89888047-7458-4e56-8be6-081cea22f9f9.png)
 
 <a name="elasticsearch_overview"></a>
 ### 1.4. Elasticsearch 
