@@ -46,6 +46,10 @@
 
 ![logstash_pipeline](https://user-images.githubusercontent.com/103992475/182565307-89888047-7458-4e56-8be6-081cea22f9f9.png)
 
+* **Cấu hình Logstash**
+  * [Logstash Configuration](https://kipalog.com/posts/Ghi-chep-ve-Logstash--P2---Logstash-Configuration)
+  
+
 <a name="elasticsearch_overview"></a>
 ### 1.4. Elasticsearch 
 
